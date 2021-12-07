@@ -1,6 +1,6 @@
 # peg-game
 
-FIXME: description
+Building the peg game (like the ones from Cracker Barrel) explained in Clojure For The Brave And True.
 
 ## Installation
 
