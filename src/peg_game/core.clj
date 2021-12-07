@@ -95,5 +95,13 @@
             pegged-board
             [connect-right connect-down-left connect-down-right])))
 
- 
+ (defn new-board
+   "This creates a new board with the given number of rows"
+   [rows]
+   (let [initial-board {:rows rows}
+         max-pos (row-tri rows)]
+     (reduce (fn [board position] (add-pos board max-pos position))
+             initial-board
+             (range 1 (inc max-pos)))))
+
 
